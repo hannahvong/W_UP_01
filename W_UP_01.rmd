@@ -44,6 +44,8 @@ $H_A$: The average number of pushups done by line players is statistically diffe
 boxplot(pushups~position,data=mydata)
 ```
 
+
+It appears that the skill players do more pushup in 2 minutes than can the line players
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
@@ -59,7 +61,12 @@ this is the results 0.00000492
 ```{r}
 t.test(pushups~position,data=mydata)
 ```
+we see the probabbility of getting the result we found assuming the null hypothesis is true, 0.00000942. This is so small that can not justify the null hypothesis, we reject $H_0$
 # Discussion and Conclusion
+
+
 
 <!--Discussion and conclusion here. If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason. Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
 
+In summary ,we sought to determine if there was a difference in the averge number of pushups that skill players and line player can do in 2 minutes.
+The P_value indicated we reject the null hypothesis, and conclude that Georgetown football line player do, on average, fewer pushup in 2 minutes han skill players
